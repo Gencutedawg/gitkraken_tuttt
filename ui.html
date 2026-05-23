@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample UI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #2d7ff9;
+      color: white;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .card-grid {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      padding: 20px;
+    }
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    .card p {
+      line-height: 1.6;
+      margin: 12px 0 0;
+    }
+    .button-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .btn {
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      color: white;
+      background: #2d7ff9;
+      cursor: pointer;
+      transition: background .2s ease;
+    }
+    .btn:hover {
+      background: #1b5ed6;
+    }
+    .sidebar {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-top: 24px;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eef2f7;
+    }
+    .sidebar li:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sample Dashboard</h1>
+    <button class="btn">New Item</button>
+  </header>
+  <main>
+    <section class="card-grid">
+      <div class="card">
+        <h2>Overview</h2>
+        <p>Welcome to the sample UI. This interface demonstrates a clean dashboard layout with cards, actions, and a sidebar.</p>
+        <div class="button-row">
+          <button class="btn">View Stats</button>
+          <button class="btn">Manage</button>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Activity</h2>
+        <p>Track your recent activity and latest updates in a simple card-based layout. Customize this area with your own content.</p>
+      </div>
+      <div class="card">
+        <h2>Quick Actions</h2>
+        <p>Add buttons, links, or shortcuts here to make the UI interactive and easy to use.</p>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <h3>Recent Notifications</h3>
+      <ul>
+        <li>Project update completed</li>
+        <li>New user joined the workspace</li>
+        <li>Server maintenance scheduled</li>
+      </ul>
+    </aside>
+  </main>
+</body>
+</html>
